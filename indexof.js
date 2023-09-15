@@ -38,6 +38,53 @@
 // stationary.unshift("sheets")
 // console.log("unshifted sheets: ", stationary);
 //slice()
-let Electricitems = ["fans", "chargers", "computers", "Digital camera", "electric drill"];
-console.log("result: ", Electricitems.slice(1, 4));
+// let Electricitems=["fans","chargers","computers","Digital camera","electric drill"]
+// console.log("result: ", Electricitems.slice(1,4));
+//splice()
+// let citynames=["islamabad","karachi","multan","rawalpindi"]
+// citynames.splice(4,1,'queta')//added cityname
+// console.log("added city name: ", citynames);
+// citynames.splice(2,1,"cbk")//replace cityname
+// console.log("replace city name: ", citynames);
+// citynames.splice(2)//removed cityname
+// console.log("removed city name: ", citynames);
+//tostring()
+// let countrynames=['pakistan','india','china','iran']
+// console.log("string from country names: ", countrynames.toString());
+//filter()
+// let myfriends=['rafay','rasheed','shehzad','haider','ramzan','haseeb']
+// let myczns=['haseeb','saad','ahsan','waheed','ali','haseeb','waheed','saad']
+// let result=myfriends.filter(f=> myczns.indexOf(f)!== -1)
+// console.log("common between two arrays: ", result);
+// let result1=myczns.filter((item, index) => myczns.indexOf(item)== index)
+// console.log("duplicated items removed: ", result1);
+//map()
+// let number=[2.1, 0.3, 4.1]
+// let result=number.map(Math.ceil)
+// console.log("result: ", result);
+//every()
+// function evennumber(item:any) {
+//     return item % 1 == 0;
+// }
+// let numbers=[1,3,7,9]
+// console.log("result: ", numbers.every(evennumber));
+//reduceRight()
+// let numbers=[3,6,7]
+// let result=numbers.reduceRight( function(a,b) {return a-b} )
+// console.log("result: ", result);
+//reduce()
+// let number=[20,5,10]
+// let result=number.reduce( function (a,b) { return a*b} )
+// console.log("result: ", result);
+//some()
+// let number = [1,2,6]
+// console.log("atleast one number is even in given array", number.some(item => item % 1 == 0));
+//sort()
+// let numbers=[1,4,3,6,5,8,2]
+// console.log("sorted array: ", numbers.sort((a,b) => a-b));
+//fill()
+const emojis = ['a', 'b', 'c', 'd'];
+console.log("result1: ", emojis.fill('e', 2, 3));
+console.log("result2: ", emojis.fill('f', 1));
+console.log("result3: ", emojis.fill('y'));
 export {};
